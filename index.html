@@ -1,44 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> sakshi Portfolio</title>
+ <link rel="stylesheet" href="style.css">
 
-    <title>Sakshi Patil | IT Engineer</title>
 </head>
 <body>
-    <h1>Hello, I'm Sakshi Patil</h1>
-    <h3>IT Engineering Student</h3>
+<header class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
 
-    <p>
-        Passionate IT engineering student with interest in software development
-        and problem solving.
-    </p>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Front-End Development</li>
-        <li>JavaScript</li>
-        <li>HTML, CSS</li>
-        <li>Digital Marketing</li>
-        <li>Data Analysis</li>
-        
-    </ul>
-   <h2>Projects</h2>
-    <div class="project-card">
-    <h3>Netflix Clone</h3>
-    <p>
-        A Netflix-inspired web application built using basic HTML, CSS, and JavaScript
-        to practice frontend development and responsive layouts.
-    </p>
-    <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
-    <p>
-        <a href="https://github.com/patilsakshi-12/netflix-clone" target="_blank">
-            View on GitHub
-        </a>
-    </p>
-</div>
 
-    <h2>Contact</h2>
-    <p>Email: patilsakshi3002@gmail.com</p>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <img src="assets/profile.jpg" alt="profile.jpg" class="profile-img">
+    <h1>Hi,I'm Sakshi</h1>
+    <p>Java Developer | Web Developer</p>
+  </div>
+</section>
+
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am an engineering student with strong knowledge of Java, Data Structures,
+    and Web Development. 
+    I enjoy creating responsive and user-friendly applications.
+  </p>
+  <h3>Education Journey</h3>
+    <p>Bachler of Technology in Information Technology
+   </p>
+   <p>current CGPA:8.21</p>
+<p>Higher secondary school</p>
+<p>percentage:83.80</p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Java</div>
+    <div class="skill">DSA</div>
+    <div class="skill">Git & GitHub</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Responsive portfolio using HTML, CSS & JS</p>
+    </div>
+    <div class="project">
+      <h3>Netflix Clone</h3>
+      <p>its based on full stack</p>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+  <h2>Get In Touch</h2>
+   <p>Email:
+    <a href="mailto:sakshipatil@email.com">
+      sakshipatil@email.com
+    </a>
+  </p>
+</section>
+
+  <div class="contact-container">
+    <!-- Left Image -->
+    <div class="contact-image">
+      <img src="assets/contact.png" alt="Contact Image">
+    </div>
+
+    <!-- Right Form -->
+    <div class="contact-form">
+      <h3>Let’s Connect</h3>
+      <p>
+        Feel free to reach out for job opportunities, internships, or collaborations.
+      </p>
+
+      <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="sakshi pramod patil" />
+        <input type="email" id="email" placeholder="patilsakshi3002@gmail.com" />
+        <textarea placeholder="job, internship."></textarea>
+        <button type="submit">send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <p>© 2026 sakshi patil | All Rights Reserved</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
